@@ -20,6 +20,15 @@ default["horizon"]["swift"]["enabled"] = "False"
 
 default["horizon"]["theme"] = "default"
 
+default["horizon"]["rackspace_theme"]["files"] = {
+  "PrivateCloud.png" => "15f5c9726009b213dfe6cba2085cd29f373f9cacb6b11e8188ab0cf922f614ad",
+  "Rackspace_Cloud_Company.png" => "c790f4067bcec5ddb294979ae7f3b3780ba03ff538de457ba341790f11220a97",
+  "Rackspace_Cloud_Company_Small.png" => "08bd42c57c69f7b07ca780ae8c3cfdd8e9f56f10f09d915956c6899a221bcb68",
+  "alert_red.png" => "2814a08fb95436f0cfd957d72d2b9edd204fdebbbad04487bb1e5bc3abd0e0d5",
+  "body_bkg.gif" => "6c1852a68f30a0e6095cdb58a95523210b959f9be6554fd07cc91ae3b7f1b93c",
+  "selected_arrow.png" => "08cf891a8f93df30b7fb07e62e3b49cdce1fab4423f92c619b286448e66740da"
+}
+
 case node["platform"]
 when "fedora", "centos", "redhat", "amazon", "scientific"
   default["horizon"]["ssl"]["dir"] = "/etc/pki/tls"                                         # node_attribute
